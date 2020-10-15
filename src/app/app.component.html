@@ -1,3 +1,33 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu side="start" menuId="menu">
+    <ion-content>
+      <ion-list>
+        <ion-menu-toggle menu="menu">
+          <ion-item onclick="buttonClick()" routerLink="/home">
+            <ion-label>Home</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle menu="menu">
+          <ion-item onclick="buttonClick()" routerLink="/admin">
+            <ion-label>Admin</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle menu="menu">
+          <ion-item lines="none" routerLink="/about">
+            <ion-label>About App</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+
+    <ion-footer>
+      <ion-menu-toggle menu="menu">
+        <ion-item lines="none" href="https://www.google.com/">
+          <ion-label>Exit</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+    </ion-footer>
+    
+  </ion-menu>
+  <ion-router-outlet main></ion-router-outlet>
 </ion-app>

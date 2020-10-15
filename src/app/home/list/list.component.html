@@ -1,0 +1,12 @@
+<ion-card *ngIf=" barang.stok != 0 " >
+  <ion-item button onclick="buttonClick()" detail [routerLink]="['./', barang.id]">
+    <ion-thumbnail slot="start">
+      <ion-img [src]="barang.foto"></ion-img>
+    </ion-thumbnail>
+    <ion-label>
+      <h1>{{ barang.merek + " " + barang.model }}</h1>
+      <p>{{ barang.harga | currency:"Rp ":true:"1.0" }}</p>
+      <p>{{ "Tersedia: " + barang.stok }}</p>
+    </ion-label>
+  </ion-item>
+</ion-card>
