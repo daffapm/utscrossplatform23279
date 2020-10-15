@@ -370,10 +370,14 @@ export class BarangService {
         this.barang[i].merek = ubahBarang.merek;
         this.barang[i].model = ubahBarang.model;
         this.barang[i].harga = ubahBarang.harga;
-        this.barang[i].stok = ubahBarang.stok;
-        // this.barang[i].stok = ubahBarang.stok;
-        // this.barang[i].stok = ubahBarang.stok;
-        // this.barang[i].stok = ubahBarang.stok;
+        this.barang[i].baseClock = ubahBarang.baseClock;
+        this.barang[i].boostClock = ubahBarang.boostClock;
+        this.barang[i].core = ubahBarang.core;
+        this.barang[i].thread = ubahBarang.thread;
+        this.barang[i].speed = ubahBarang.speed;
+        this.barang[i].ukuran = ubahBarang.ukuran;
+        this.barang[i].chipset = ubahBarang.chipset;
+        this.barang[i].prosesor = ubahBarang.prosesor;
       }
     }
   }
