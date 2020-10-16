@@ -370,6 +370,7 @@ export class BarangService {
         this.barang[i].merek = ubahBarang.merek;
         this.barang[i].model = ubahBarang.model;
         this.barang[i].harga = ubahBarang.harga;
+        this.barang[i].stok = ubahBarang.stok;
         this.barang[i].baseClock = ubahBarang.baseClock;
         this.barang[i].boostClock = ubahBarang.boostClock;
         this.barang[i].core = ubahBarang.core;
